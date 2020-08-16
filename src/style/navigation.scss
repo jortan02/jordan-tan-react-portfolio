@@ -2,21 +2,32 @@
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  height: 24px;
 
   .left-side {
     display: flex;
   }
 
+  .right-side {
+    a {
+      margin-left: 15px;
+      cursor: pointer;
+      color: $teal;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        color: $dark-teal;
+      }
+    }
+  }
+
   .nav-link-wrapper {
-    // height: 22px;
-    // border-bottom: 1px solid transparent;
-    // transition: 0.5s ease-in-out;
     margin-right: 20px;
     text-transform: uppercase;
     font-size: 0.9rem;
 
     a {
-      padding-bottom: 11px;
+      padding-bottom: 5px;
       border-bottom: 1px solid transparent;
       transition: 0.5s ease-in-out;
       color: $grey;
@@ -26,10 +37,6 @@
         border-bottom: 1px solid black;
       }
     }
-
-    // &:hover {
-    //   border-bottom: 1px solid black;
-    // }
 
     .nav-link-active {
       color: black;
